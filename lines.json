@@ -8,11 +8,51 @@
         "note":""
     },
     {
+        "character":"桜羽エマ",
+        "act":"1",
+        "chapter":"1",
+        "line":"え、な、なに、ここ⋯⋯？",
+        "category":"normal",
+        "note":""
+    },
+    {
+        "character":"桜羽エマ",
+        "act":"1",
+        "chapter":"1",
+        "line":"ろ、牢屋⋯⋯！？なんで！？",
+        "category":"normal",
+        "note":""
+    },
+    {
+        "character":"桜羽エマ",
+        "act":"1",
+        "chapter":"1",
+        "line":"（明日から高校生だって⋯⋯ワクワクしながら眠ったはず）",
+        "category":"normal",
+        "note":""
+    },
+    {
+        "character":"桜羽エマ",
+        "act":"1",
+        "chapter":"1",
+        "line":"（眠る前に覚えてるのは⋯⋯壁にかけてあったピカピカの高校の制服）",
+        "category":"normal",
+        "note":""
+    },
+    {
         "character":"橘シェリー",
         "act":"",
         "chapter":"",
         "line":"今日はボクが日直です～！ワクワクしますね～！奥の扉気になりますー！",
         "category":"others",
         "note":"本当に橘シェリー？"
+    },
+    {
+        "character":"夏目アンアン",
+        "act":"",
+        "chapter":"",
+        "line":"じゃあ、わがはいもカレーセットをふたつ。",
+        "category":"others",
+        "note":"果たしてアンアンは食べ切れるのだろうか。"
     }
 ]
