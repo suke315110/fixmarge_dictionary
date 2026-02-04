@@ -76,6 +76,11 @@ td:first-child {
     font-size: 18px;
 }
 
+.highlight {
+    color: #9f8cf4;
+    font-weight: bold;
+}
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -94,9 +99,8 @@ td:first-child {
     padding: 40px;
     border: 1px solid #333;
     text-align: center;
-    max-width: 500px;
-    width: 90%;
-    box-sizing: border-box;
+    max-width: 600px;
+    width: 95%;
 }
 
 #authMessage p {
@@ -130,35 +134,14 @@ button {
     body {
         padding: 10px;
     }
-
-    .disclaimer-header {
-        font-size: 12px;
-        padding: 15px 10px;
-    }
-
-    table {
-        font-size: 13px;
-    }
-
-    th, td {
-        padding: 8px 5px;
-    }
-
-    td:first-child {
-        font-size: 15px;
-    }
-
+    
     .modal-content {
-        padding: 40px 15px;
+        width: 100%;
+        padding: 20px 10px;
     }
 
     #authMessage p {
         font-size: 16px;
-        white-space: normal;
-        word-break: keep-all;
-    }
-
-    #authMessage span {
-        display: inline-block;
+        white-space: nowrap;
     }
 }
