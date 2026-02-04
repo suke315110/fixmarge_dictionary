@@ -243,3 +243,11 @@ a:hover {
     font-size: 14px;
     font-weight: bold;
 }
+
+th {
+    user-select: none;
+}
+
+th:hover {
+    background-color: #333;
+}
