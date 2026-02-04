@@ -215,3 +215,31 @@ select {
 select:focus {
     border-color: #c00000;
 }
+
+a {
+    color: #ff4d4d;
+    text-decoration: none;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ff0000;
+    text-shadow: 0 0 8px #ff0000;
+    text-decoration: underline;
+}
+
+
+.footer-links {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.footer-links a {
+    font-size: 14px;
+    font-weight: bold;
+}
