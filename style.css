@@ -176,11 +176,18 @@ button {
 
     td:nth-of-type(1) { padding-left: 12px; font-size: 20px; border-bottom: 2px solid #c00000; background: #111; }
     td:nth-of-type(1):before { content: ""; }
-    
-    td:nth-of-type(2):before { content: "キャラクター"; }
-    td:nth-of-type(3):before { content: "章"; }
-    td:nth-of-type(4):before { content: "話"; }
-    td:nth-of-type(5):before { content: "備考"; }
+
+    #normalTable td:nth-of-type(2):before,
+    #searchResultTable td:nth-of-type(2):before { content: "キャラクター"; }
+    #normalTable td:nth-of-type(3):before,
+    #searchResultTable td:nth-of-type(3):before { content: "章"; }
+    #normalTable td:nth-of-type(4):before,
+    #searchResultTable td:nth-of-type(4):before { content: "話"; }
+    #normalTable td:nth-of-type(5):before,
+    #searchResultTable td:nth-of-type(5):before { content: "備考"; }
+
+    #othersTable td:nth-of-type(2):before { content: "キャラクター"; }
+    #othersTable td:nth-of-type(3):before { content: "備考"; }
 
     td:last-child {
         border-bottom: none;
@@ -208,4 +215,3 @@ select {
 select:focus {
     border-color: #c00000;
 }
-
