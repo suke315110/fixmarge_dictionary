@@ -60,26 +60,21 @@ table {
     border-collapse: collapse;
     margin-top: 20px;
     background-color: #0a0a0a;
+    table-layout: fixed;
 }
 
 th, td {
     border: 1px solid #333;
     padding: 12px;
     text-align: left;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 th {
     background-color: #222;
     color: #c00000;
     font-weight: bold;
-    white-space: nowrap;
-}
-
-td:last-child, th:last-child {
-    white-space: normal;
-    word-break: break-all;
-    overflow-wrap: break-word;
-    min-width: 200px;
 }
 
 tbody tr:hover {
@@ -145,86 +140,26 @@ button {
     font-size: 16px;
 }
 
-button:hover {
-    background: #ff0000;
-}
-
 @media screen and (max-width: 600px) {
     body {
         padding: 10px;
     }
-
-    .modal-content {
-        padding: 40px 20px;
-        width: 85%;
-        border-color: #c00000;
+    
+    table {
+        font-size: 14px;
     }
 
-    #passwordInput {
-        padding: 15px;
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-
-    .modal-content button {
-        width: 100%;
-        padding: 18px;
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    #authMessage p {
-        font-size: 18px;
-        line-height: 1.6;
-    }
-
-    #authMessage span {
-        font-size: 24px;
-        display: block;
-        margin-top: 10px;
-    }
-
-    thead {
-        display: none;
-    }
-
-    table, tbody, tr, td {
-        display: block;
-        width: 100%;
-    }
-
-    tr {
-        margin-bottom: 20px;
-        border: 1px solid #444;
-        background: #222;
-        padding: 10px;
-        border-radius: 8px;
-    }
-
-    td {
-        border: none !important;
-        padding: 5px 10px !important;
-        text-align: left !important;
-        font-size: 16px;
+    th, td {
+        padding: 8px 4px;
     }
 
     td:first-child {
-        font-size: 22px !important;
-        border-bottom: 1px solid #c00000 !important;
-        margin-bottom: 5px;
-        display: block;
+        font-size: 16px;
     }
 
-    td:last-child {
-        color: #bbb;
-        font-size: 14px;
-        margin-top: 5px;
-        min-width: unset !important;
-    }
-
-    td:nth-child(4)::before {
-        content: "意味: ";
-        color: #888;
-        font-size: 12px;
+    /* 検索バーの文字を大きくしてドアップ防止 */
+    #searchInput {
+        font-size: 16px;
+        padding: 12px;
     }
 }
