@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex,nofollow">
+        <title>フィクスマージ語辞書</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="disclaimer-header">
+            <p><strong style="color: #ff0000; font-size: 14px;">【非公式ファンサイト】</strong>掲載情報の著作権は権利元様に帰属します。</p>
+            <p>※本ページは関係者内での閲覧を目的としており、情報の無断転載・共有を固く禁じます。</p>
+            <p>まだ入力は全部できてないです。</p>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="スペル、読み、日本語訳で検索...">
+        </div>
+
+        <div id="dictionaryContent">
+            <section id="normalSection">
+                <h2>通常辞書</h2>
+                <table id="normalTable">
+                    <thead>
+                        <tr>
+                            <th>スペル</th>
+                            <th>読み</th>
+                            <th>品詞</th>
+                            <th>日本語訳</th>
+                            <th>備考</th>
+                        </tr>
+                    </thead>
+                    <tbody id="normalTableBody"></tbody>
+                </table>
+            </section>
+
+            <section id="othersSection">
+                <h2>その他・特殊用語</h2>
+                <table id="othersTable">
+                    <thead>
+                        <tr>
+                            <th>スペル</th>
+                            <th>読み</th>
+                            <th>品詞/分類</th>
+                            <th>日本語訳</th>
+                            <th>備考</th>
+                        </tr>
+                    </thead>
+                    <tbody id="othersTableBody"></tbody>
+                </table>
+            </section>
+
+            <section id="searchResultSection" style="display:none">
+                <h2>検索結果</h2>
+                <table id="searchResultTable">
+                    <thead>
+                        <tr>
+                            <th>スペル</th>
+                            <th>読み</th>
+                            <th>品詞/分類</th>
+                            <th>日本語訳</th>
+                            <th>備考</th>
+                        </tr>
+                    </thead>
+                    <tbody id="searchResultTableBody"></tbody>
+                </table>
+            </section>
+        </div>
+
+        <div id="authModal" class="modal-overlay">
+            <div class="modal-content">
+                <div id="authMessage">
+                    <p>パスワードを......<span class="highlight">【入力しろ】</span>っ！！</p>
+                </div>
+        
+                <div id="authForm">
+                    <input type="password" id="passwordInput">
+                    <button onclick="checkPassword()">🌸✋パスワードは...これだよ！</button>
+                </div>
+
+                <div id="redirectArea" style="display:none; margin-top:20px;">
+                    <button onclick="goToOfficial()">立ち去る</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
