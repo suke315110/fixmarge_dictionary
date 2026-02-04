@@ -147,6 +147,36 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .modal-content {
+        padding: 30px 20px;
+        width: 85%;
+    }
+
+    #passwordInput {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+    }
+
+    .modal-content button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .disclaimer-header {
+        padding: 15px;
+        font-size: 14px;
+    }
+
     thead {
         display: none;
     }
@@ -168,11 +198,11 @@ button:hover {
         border: none !important;
         padding: 5px 10px !important;
         text-align: left !important;
-        font-size: 14px;
+        font-size: 15px;
     }
 
     td:first-child {
-        font-size: 20px !important;
+        font-size: 22px !important;
         border-bottom: 1px solid #c00000 !important;
         margin-bottom: 5px;
         display: block;
@@ -180,7 +210,7 @@ button:hover {
 
     td:last-child {
         color: #bbb;
-        font-size: 12px;
+        font-size: 13px;
         margin-top: 5px;
         min-width: unset !important;
     }
@@ -188,6 +218,6 @@ button:hover {
     td:nth-child(4)::before {
         content: "意味: ";
         color: #888;
-        font-size: 11px;
+        font-size: 12px;
     }
 }
