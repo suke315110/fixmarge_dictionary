@@ -160,4 +160,38 @@
             });
         }
     }
+    let currentSortColumn = -1;
+    let isAscending = true;
+
+    window.sortTable = function(tableId, colIndex) {
+        const table = document.getElementById(tableId);
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        
+        if (rows.length === 1 && rows[0].cells.length === 1) return;
+
+        if (currentSortColumn === colIndex) {
+            isAscending = !isAscending;
+        } else {
+            currentSortColumn = colIndex;
+            isAscending = true;
+        }
+
+        rows.sort((a, b) => {
+            let valA = a.cells[colIndex].textContent.trim();
+            let valB = b.cells[colIndex].textContent.trim();
+
+            if (colIndex === 2 || colIndex === 3) {
+                const numA = parseInt(valA) || 0;
+                const numB = parseInt(valB) || 0;
+                return isAscending ? numA - numB : numB - numA;
+            }
+
+            return isAscending 
+                ? valA.localeCompare(valB, 'ja') 
+                : valB.localeCompare(valA, 'ja');
+        });
+
+        rows.forEach(row => tbody.appendChild(row));
+    };
 })();
