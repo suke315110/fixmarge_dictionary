@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="robots" content="noindex,nofollow">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>フィクスマージ語辞書</title>
+        <title>魔女裁判ノ魔女裁判セリフ集</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -15,19 +15,56 @@
         </div>
 
         <div class="search-container">
-            <input type="text" id="searchInput" placeholder="スペル、読み、日本語訳で検索...">
+            <input type="text" id="searchInput" placeholder="フリーワード検索...">
+            
+            <div class="filter-group">
+                <select id="characterFilter" onchange="search()">
+                    <option value="">キャラクター</option>
+                    <option value="桜羽エマ">桜羽エマ</option>
+                    <option value="二階堂ヒロ">二階堂ヒロ</option>
+                    <option value="夏目アンアン">夏目アンアン</option>
+                    <option value="城ヶ崎ノア">城ヶ崎ノア</option>
+                    <option value="蓮見レイア">蓮見レイア</option>
+                    <option value="佐伯ミリア">佐伯ミリア</option>
+                    <option value="宝生マーゴ">宝生マーゴ</option>
+                    <option value="黒部ナノカ">黒部ナノカ</option>
+                    <option value="紫藤アリサ">紫藤アリサ</option>
+                    <option value="橘シェリー">橘シェリー</option>
+                    <option value="遠野ハンナ">遠野ハンナ</option>
+                    <option value="佐渡ココ">佐渡ココ</option>
+                    <option value="氷上メルル">氷上メルル</option>
+                    <option value="ゴクチョー">ゴクチョー</option>
+                    <option value="月代ユキ">月代ユキ</option>
+                </select>
+
+                <select id="chapterFilter" onchange="search()">
+                    <option value="">章</option>
+                    <option value="1">第1章</option>
+                    <option value="2">第2章</option>
+                </select>
+
+                <select id="actFilter" onchange="search()">
+                    <option value="">話</option>
+                    <option value="1">第1話</option>
+                    <option value="2">第2話</option>
+                    <option value="3">第3話</option>
+                    <option value="4">第4話</option>
+                    <option value="5">第5話</option>
+                    <option value="6">第6話</option>
+                </select>
+            </div>
         </div>
 
-        <div id="dictionaryContent">
-            <section id="normalSection">
-                <h2>通常辞書</h2>
+        <div id="linesContent">
+            <section id="linesSection">
+                <h2>セリフ一覧</h2>
                 <table id="normalTable">
                     <thead>
                         <tr>
-                            <th>スペル</th>
-                            <th>読み</th>
-                            <th>品詞</th>
-                            <th>日本語訳</th>
+                            <th>セリフ</th>
+                            <th>キャラクター</th>
+                            <th>章</th>
+                            <th>話</th>
                             <th>備考</th>
                         </tr>
                     </thead>
@@ -36,14 +73,12 @@
             </section>
 
             <section id="othersSection">
-                <h2>その他・特殊用語</h2>
+                <h2>その他</h2>
                 <table id="othersTable">
                     <thead>
                         <tr>
-                            <th>スペル</th>
-                            <th>読み</th>
-                            <th>品詞/分類</th>
-                            <th>日本語訳</th>
+                            <th>セリフ</th>
+                            <th>キャラクター</th>
                             <th>備考</th>
                         </tr>
                     </thead>
@@ -56,10 +91,10 @@
                 <table id="searchResultTable">
                     <thead>
                         <tr>
-                            <th>スペル</th>
-                            <th>読み</th>
-                            <th>品詞/分類</th>
-                            <th>日本語訳</th>
+                            <th>セリフ</th>
+                            <th>キャラクター</th>
+                            <th>章</th>
+                            <th>話</th>
                             <th>備考</th>
                         </tr>
                     </thead>
@@ -86,5 +121,4 @@
         </div>
         <script src="script.js"></script>
     </body>
-
 </html>
